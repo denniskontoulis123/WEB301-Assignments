@@ -1,14 +1,21 @@
-/* media queries first */
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
-    body {
-        background-color: #b5dbd0c7;
-    }
+
+
+header h1 {
+    text-align: center;
 }
 
-@media only screen and (min-width: 1024px) {
-    body {
-        background-color: #c031b4d0;
-    }
+.responsive-form {
+    width: 100%
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
 }
 
 input[type="text"],
@@ -23,5 +30,18 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover { /*gonna do a cool hover effect */
+    background-color: #6aa5dd
+}
 
+/* media queries first */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: #47e6b9c7;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: #c031b4d0;
+    }
 }
