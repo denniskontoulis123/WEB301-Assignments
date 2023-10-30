@@ -1,13 +1,13 @@
 /* media queries first */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
     body {
         background-color: #b5dbd0c7;
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1023px){
+@media only screen and (min-width: 1024px) {
     body {
-        background-color: #539614d0;
+        background-color: #c031b4d0;
     }
 }
 
