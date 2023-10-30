@@ -50,6 +50,10 @@ input[type="submit"]:hover { /*gonna do a cool hover effect */
     body {
         background-color: #47e6b9;
     }
+
+    label {
+        font-size: x-large;
+    }
 }
 
 @media only screen and (min-width: 601px) { /*finally did grid right for once ;) */
