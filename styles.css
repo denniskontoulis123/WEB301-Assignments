@@ -80,6 +80,6 @@ input[type="submit"]:hover { /*gonna do a cool hover effect */
     }
 
     input[type="submit"] {
-        grid-template-columns: 1fr 2fr;
+        margin-left: 140px;
     }
 }
