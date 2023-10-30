@@ -1,4 +1,7 @@
-
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
 
 header h1 {
     text-align: center;
@@ -22,25 +25,30 @@ input[type="text"],
 input[type="text"],
 input[type="text"],
 textarea {
-
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 input[type="submit"] {
+    background-color: #21cad6
 
 }
 
 input[type="submit"]:hover { /*gonna do a cool hover effect */
-    background-color: #6aa5dd
+    background-color: #214bd6
 }
 
 /* media queries first */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
-        background-color: #47e6b9c7;
+        background-color: #47e6b9;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 601px) {
     body {
         background-color: #c031b4d0;
     }
