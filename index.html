@@ -6,6 +6,7 @@
     Student #: 0798883
     DLM: 2023-11-07 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <title>Form Validation</title>
 </head>
@@ -26,7 +27,27 @@
     </script>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">
+                <form id="education-info">
+                    <div class="form">
+                        <label for="schoolName">Name of School:</label>
+                        <input class="input-field" type="text" id="schoolName" name="schoolName" required>
+                    </div>
+                    <div class="form">
+                        <label for="dateOfJoining">Name of School:</label>
+                        <input class="input-field" type="date" id="dateOfJoining" name="dateOfJoining" required>
+                    </div>
+                    <div class="form">
+                        <label>Graduated:</label>
+                        <input type="radio" id="graduatedYes" name="graduated" value="Yes" required>
+                        <label for="graduatedYes">Yes</label>
+                        <input type="radio" id="graduatedNo" name="graduated" value="No">
+                        <label for="graduatedNo">No</label>
+                    </div>
+                </form>
+            </div>
+
+            
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
         </div>
