@@ -11,6 +11,7 @@
     <title>Form Validation</title>
 </head>
 <body>
+<header><h1>Dennis Kontoulis</h1></header>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -35,23 +36,25 @@
 
 
             <div class="swiper-slide">
+                <form id ="personal-information">
                 <div class="form">
-                    <label for="schoolName">Name of School:</label>
-                    <input class="input-field" type="text" id="schoolName" name="schoolName" required>
+                    <label for="email">Email:</label>
+                    <input class="input-field" type="email" id="email" name="email" required>
                 </div>
                 <div class="form">
-                    <label for="dateOfJoining">Name of School:</label>
-                    <input class="input-field" type="date" id="dateOfJoining" name="dateOfJoining" required>
+                    <label for="phone">Phone Number:</label>
+                    <input class="input-field" type="tel" id="phone" name="phone" required>
                 </div>
                 <div class="form">
-                    <label>Graduated:</label>
-                    <input type="radio" id="graduatedYes" name="graduated" value="Yes" required>
-                    <label for="graduatedYes">Yes</label>
-                    <input type="radio" id="graduatedNo" name="graduated" value="No">
-                    <label for="graduatedNo">No</label>
-            </div>
+                    <label for="postal">Postal Code:</label>
+                    <input class="input-field" type="text" id="postal" name="postal">
+                </div>
+            </form>
+        </div>
+        
             <div class="swiper-slide">Slide 3</div>
         </div>
+    </div>
 
         <!-- dots at the bottom -->
         <div class="swiper-pagination"></div>
