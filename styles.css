@@ -8,4 +8,57 @@
     body {
         background-color: rgb(95, 85, 230)
     }
+
+    .swiper-slide {
+        max-width: 800px;
+    }
+
+    .form {
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+    .form label {
+        grid-column: 1;
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    .input-field {
+        grid-column: 2;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.swiper { 
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: rgb(160, 100, 154);
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    margin: 5px;
+    display: grid;
+    gap: 10px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
