@@ -45,11 +45,14 @@
                 </div>
                 <div class="form">
                     <label for="phone">Phone Number:</label>
-                    <input class="input-field" type="tel" id="phone" name="phone" pattern="\\d{10}" required>
+                    <input class="input-field" type="tel" id="phone" name="phone" pattern="\d{10}" required
+                    oninvalid="this.setCustomValidity('Please enter a valid 10-digit phone number.')" 
+                    oninput="this.setCustomValidity('')">
                 </div>
                 <div class="form">
                     <label for="postal">Postal Code:</label>
-                    <input class="input-field" type="text" id="postal" name="postal">
+                    <input class="input-field" type="text" id="postal" name="postal" pattern="^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJKLMNPRSTVWXYZ] \d[ABCEGHJKLMNPRSTVWXYZ]\d$" required
+                    oninvalid="this.setCustomValidity('Please enter a valid Canadian postal code.')" oninput="this.setCustomValidity('')">
                 </div>
             </form>
         </div>
@@ -83,6 +86,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        // swiper script
         const swiper = new Swiper (".mySwiper", {
             loop: true,
             navigation: {
@@ -92,6 +96,51 @@
             pagination: {
                 el: ".swiper-pagination",
             },
+        });
+
+        // validation scripts
+        $(document).ready(function() {
+            $("#payment-information").validate({
+                // setting rules
+                rules: {
+                    creditCardNumber: {
+                        required: true,
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 10
+                    },
+                    cvv: {
+                        required: true,
+                        digits: true,
+                        minlength: 3,
+                        maxlength: 3
+                    },
+                    expirationDate: {
+                        required: true,
+                        date: true
+                    }
+                },
+                messages: {
+                    creditCardNumber: {
+                        required: "Please enter your credit card number",
+                        digits: "Please enter only digits",
+                        minlength: "Your credit card number must be exactly 10 digits long",
+                        maxlength: "Your credit card number must be exactly 10 digits long"
+                    },
+                    cvv: {
+                        required: "Please enter your CVV",
+                        digits: "Please enter only digits",
+                        minlength: "Your CVV must be 3 digits long",
+                        maxlength: "Your CVV must be 3 digits long"
+                    },
+                    expirationDate: {
+                        required: "Please enter the expiration date"
+                    }
+                },
+                submitHandler: function(form) {
+                    form.submit(); 
+                }
+            });
         });
     </script>
 </body>
