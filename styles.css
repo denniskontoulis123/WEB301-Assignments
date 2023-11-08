@@ -2,6 +2,25 @@
     body {
         background-color: rgb(90, 218, 160)
     }
+
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .form label {
+        text-align: left;
+        margin-right: 0;
+        font-size: large;
+    }
+
+    .form input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    .form label[for="graduatedYes"],
+    .form label[for="graduatedNo"] {
+        display: flex;
+    }
 }
 
 @media (min-width: 601px) {
@@ -10,7 +29,10 @@
     }
 
     .swiper-slide {
-        max-width: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: auto;
     }
 
     .form {
