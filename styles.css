@@ -36,6 +36,7 @@
     }
 
     .form {
+        display: flex;
         grid-template-columns: auto 1fr;
         align-items: center;
     }
@@ -50,12 +51,14 @@
         grid-column: 2;
     }
 
-    .form input[type="radio"],
-    .form label[for="graduatedYes"],
-    .form label[for="graduatedNo"] {
-        display: inline-block;
-        margin-right: 5px;
-        vertical-align: middle;
+    .form div:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .form input[type="radio"] {
+        margin-right: 10px;
     }
 }
 
@@ -77,8 +80,6 @@ header {
 
 .form {
     margin: 5px;
-    display: grid;
-    gap: 10px;
 }
 
 .form label {
