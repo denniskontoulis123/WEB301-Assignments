@@ -10,7 +10,8 @@
     .form label {
         text-align: left;
         margin-right: 0;
-        font-size: large;
+        font-size: larger;
+        font-weight: bold;
     }
 
     .form input[type="radio"] {
