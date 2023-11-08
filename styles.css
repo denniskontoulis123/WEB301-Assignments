@@ -14,13 +14,12 @@
         font-weight: bold;
     }
 
-    .form input[type="radio"] {
-        margin-right: 5px;
-    }
-
+    .form input[type="radio"],
     .form label[for="graduatedYes"],
     .form label[for="graduatedNo"] {
-        display: flex;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
     }
 }
 
@@ -49,6 +48,14 @@
 
     .input-field {
         grid-column: 2;
+    }
+
+    .form input[type="radio"],
+    .form label[for="graduatedYes"],
+    .form label[for="graduatedNo"] {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
     }
 }
 
