@@ -20,3 +20,27 @@
 h1 {
   text-align: center;
 }
+
+.btn {
+  display: inline-block;
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn.favorite {
+  margin-right: 10px;
+}
+
+.btn.play {
+  background-color: #32cd32;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
