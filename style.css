@@ -1,103 +1,6 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-  
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-  
-header {
-    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 30%, #86a8e7 60%, #8fa8db 100%);
-    color: white;
-    text-align: center;
-    padding: 1.5em 0;
-    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-  
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 700; /* Makes nav links more bold */
-    padding: 5px 10px; /* Added padding to nav links */
-    border-radius: 5px; /* Rounded corners for nav links */
-}
-  
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slight white background on hover */
-}
-
-h1 {
-    font-size: 2.5em; /* Increased font size */
-    margin: 0;
-    font-weight: 700; /* Makes the heading bold */
-}
-  
-.content {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-  
-.movie {
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-  
-.movie img {
-    width: 100%;
-    border-radius: 5px;
-}
-  
-.btn {
-    display: inline-block;
-    background-color: #ff6347;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-}
-  
-.btn.favorite {
-    margin-right: 10px;
-}
-  
-.btn.play {
-    background-color: #32cd32;
-}
-  
-.btn:hover {
-    opacity: 0.9;
-}
-  
 @media (max-width: 600px) {
     body {
       background-color: #e0f7fa;
-    }
-    h1 {
-      font-size: 1.5em;
     }
 }
   
@@ -105,20 +8,12 @@ h1 {
     body {
       background-color: #c5e1a5;
     }
-    .movie {
-      width: 48%;
-    }
+
 }
   
 @media (min-width: 1025px) {
     body {
       background-color: #ffcc80;
-    }
-    .container {
-      width: 70%;
-    }
-    .movie {
-      width: 30%;
     }
 }
   
