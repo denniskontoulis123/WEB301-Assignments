@@ -11,9 +11,9 @@ DLM: 2023-11-21
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary px-3 mb">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">SuperStreamz</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,10 @@ DLM: 2023-11-21
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#scrollspyHeading1">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#scrollspyHeading2">Contact Us</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,6 +48,46 @@ DLM: 2023-11-21
         </form>
       </div>
     </div>
-  </nav>
+  </nav><br/>
+  <h1 class="text-danger bg-info">Dennis Kontoulis</h1>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <h4 id="scrollspyHeading1">About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis numquam aliquid, et tempore reiciendis temporibus corporis. Ex, dolorem possimus! Repellat ipsam neque, sunt id sed veniam in esse eum quidem.</p>
+    <h4 id="scrollspyHeading2">Contact Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto voluptas numquam eum aspernatur ea quis sit voluptates praesentium libero. Ex nulla earum a aspernatur maxime eius ipsum veritatis nam magni.</p>
+  </div>
+<hr>
+  <div class="card-group">
+    <div class="card">
+      <img src="imgs\goodwillhunting.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum earum repellat magnam libero nisi possimus, voluptate architecto reprehenderit sit iure debitis optio dolores, labore inventore ad voluptatibus praesentium atque quibusdam!</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="imgs\madmax.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates porro rem repellendus sint. Eaque sunt enim, pariatur culpa aliquid atque tempora, unde quos voluptatum numquam, non deleniti officiis aperiam eum!</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="imgs\manchesterbythesea.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat porro odit molestiae minima nesciunt eligendi, sequi explicabo tenetur, eius exercitationem totam eos, esse repudiandae numquam cupiditate nam. Veritatis, eligendi id!</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
