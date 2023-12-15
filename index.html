@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Kontoulis' Final</title>
+ <!--bootstrap-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="#">Homes for Sale</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="#">Homes for Rent</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Mortgage Calculator</li>
+        </ol>
+      </nav>
+      <nav class="navbar" style="background-color: #7f9ac0;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-house-fill "></i>
+            <i class="bi bi-bookmark-heart"></i>
+            <i class="bi bi-heart-half"></i>
+          </a>
+        </div>
+      </nav>
+      <div id="houseCarousel" class="carousel slide mx-auto p-2 w-50" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="house1.jpeg" class="d-block w-100" alt="A house">
+          </div>
+          <div class="carousel-item">
+            <img src="house2.jpeg" class="d-block w-100" alt="Another house">
+          </div>
+          <div class="carousel-item">
+            <img src="house3.jpeg" class="d-block w-100" alt="Yet another house">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#houseCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#houseCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="backyardhouse.jpeg" class="card-img-top w-100" alt="...">
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Lorem ipsum dolor et lorem">
+                    Description
+                  </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="housekeys.jpeg" class="card-img-top w-100" alt="...">
+              <div class="card-body">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Lorem ipsum dolor et lorem">
+                    Description
+                  </button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="houseplants.jpeg" class="card-img-top w25" alt="...">
+              <div class="card-body">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Lorem ipsum dolor et loirem">
+                    Description
+                  </button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="mb-3 mx-auto p-2" align="center">
+        <h1>Form</h1>
+        <form id ="feedback-form">
+            <div class="form">
+                <label for="firstName">First name:</label>
+                <input class="input-field" type="text" id="firstName" name="firstName" minlength="3" required
+                oninvalid="this.setCustomValidity('Please enter at least 3 characters.')" 
+                oninput="this.setCustomValidity('')">
+            </div><div class="form">
+                <label for="email">Email:</label>
+                <input class="input-field" type="email" id="email" name="email" required
+                oninvalid="this.setCustomValidity('Please enter a valid email address')" 
+                oninput="this.setCustomValidity('')">
+            </div>
+            <div class="form">
+                <label for="comments">Comments:</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px; width: 250px" minlength="8" required 
+                oninvalid="this.setCustomValidity('Please enter at least 8 characters.')" 
+                oninput="this.setCustomValidity('')"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+<script src="script.js"></script></body>
+<script src="tooltip.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
